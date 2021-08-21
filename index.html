@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMac</title>
+    <!-- tailwind link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-green-100">
+    <main>
+        <section class="container md:flex items-center justify-around py-12 p-4">
+            <div>
+                <img src="images/mac.png" alt="">
+            </div>
+            <div class="space-y-4 m-10">
+                <h1 class="text-3xl font-bold uppercase">
+                    <span class="text-pink-500">Customize your Blue 24-inch</span>
+                    <br>
+                    <span class="text-gray-700">iMac with Apple M1 chip</span>
+                </h1>
+                <p class="w-2/3">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores,7-core
+                    GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports
+                    Magic Mouse Magic Keyboard-US English.</p>
+
+                <div class="memory">
+                    <h1><span class="font-semibold text-3xl">Memory</span></h1>
+                    <input type="button"
+                        class="px-4 m-2 py-2 text-black border-2 border-gray-400 hover:bg-black hover:text-white"
+                        value="8GB unified memory">
+                    <input type="button" onclick="memoryFunction(0)"
+                        class="px-4 m-2 py-2 text-black border-2 border-gray-400 hover:bg-black hover:text-white"
+                        value="16GB unified memory">
+                </div>
+                <div class="storage">
+                    <h1><span class="font-semibold text-3xl">Storage</span></h1>
+                    <input type="button"
+                        class="px-4 m-2 py-2 text-black border-2 border-gray-400 hover:bg-black hover:text-white"
+                        value="256GB SSD storage">
+                    <input type="button" onclick="storageFunction(0)"
+                        class="px-4 m-2 py-2 text-black border-2 border-gray-400 hover:bg-black hover:text-white"
+                        value="512GB SSD storage">
+                    <input type="button" onclick="storageFunction2(0)"
+                        class="px-4 m-2 py-2 text-black border-2 border-gray-400 hover:bg-black hover:text-white"
+                        value="1TB SSD storage">
+                </div><br>
+                <div class="delivary">
+                    <h1><span class="font-semibold text-3xl">Delivery</span></h1>
+                    <button class="px-4 m-2 py-2 text-black border-2 border-gray-400 hover:bg-black hover:text-white">
+                        Friday,Aug25 FREE Prime Delivery</button>
+
+                    <button id="second-delivery"
+                        class="px-4 m-2 py-2 text-black border-2 border-gray-400 hover:bg-black hover:text-white">Friday,Aug
+                        21 Delivery charge $20"
+                    </button>
+                </div>
+                <br>
+                <div>
+                    Best Price <input type="text" value="$1299"><br>
+                    Extra Memory cost <input type="text" id="memory-total" value="$0"></br>
+                    Extra Storage cost <input type="text" id="storage-total" value="$0"></br>
+                    <h2>Delivery Cost $<span id="delivery-total">0</span></h2>
+                </div>
+                <div>
+                    <h2>Total:$<span id="cost-total">1299</span></h2>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="flex justify-center mb-4">
+                <input id="apply-input" class="border block border-gray-500	rounded w-3/4  px-2" type="text"
+                    placeholder="">
+                <button id="apply-button"
+                    class="bg-pink-200 px-4 rounded py-2 text-white font-medium hover:bg-pink-500">Apply</button>
+            </div>
+            <div class="bg-purple-300 p-8 rounded flex justify-center font-bold">
+                <h2>Total:$<span id="total">1299</span></h2>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
